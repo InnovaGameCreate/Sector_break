@@ -8,18 +8,25 @@ public class MainCamera : MonoBehaviour
     private GameObject player;
     private float pos1;
     private float pos2;
-    public float a;
-    public float b;
+    public float a1;
+    public float a2;
+    public float b1;
+    public float b2;
     public float c;
     public float d;
+    public float e1;
+    public float e2;
+    public float f1;
+    public float f2;
+    public float g;
+    public float h;
     public float y;
-    
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("player");
-        
+
 
 
     }
@@ -29,9 +36,15 @@ public class MainCamera : MonoBehaviour
     {
         pos1 = player.transform.position.x;
         pos2 = player.transform.position.z;
-        if(pos1 > a && pos2 > b)
+
+        if (a1 <= pos1 && pos1 <= a2 && b1 <= pos2 && pos2 <= b2)
         {
-            this.gameObject.transform.position = new Vector3(c,y,d);
+            this.gameObject.transform.position = new Vector3(c, y, d);
+
+        }
+        if (e1 <= pos1 && pos1 <= e2 && f1 <= pos2 && pos2 <= f2)
+        {
+            this.gameObject.transform.position = new Vector3(g, y, h);
         }
     }
 }
