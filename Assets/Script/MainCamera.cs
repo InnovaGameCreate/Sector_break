@@ -113,7 +113,7 @@ public class MainCamera : MonoBehaviour
     {
         player = GameObject.Find("player");
 
-
+        this.gameObject.transform.position = new Vector3(0.0f, 17.5f, 0.0f);
 
     }
 
