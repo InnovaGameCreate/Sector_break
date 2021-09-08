@@ -11,8 +11,11 @@ public class FindPlayer : MonoBehaviour
     GameObject text;
     [SerializeField]
     GameObject player;
+    [SerializeField]
+    GameObject panel;
     private void Start()
     {
+        panel.SetActive(false);
         text.SetActive(false);
         routine = coroutine();
     }
@@ -41,9 +44,11 @@ public class FindPlayer : MonoBehaviour
         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.F));
         player.SetActive(false);
         text.SetActive(false);
+        panel.SetActive(true);
         yield return null;
         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.F));
         player.SetActive(true);
+        panel.SetActive(false);
         yield break;
     }
 }
