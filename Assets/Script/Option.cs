@@ -31,6 +31,7 @@ public class Option : MonoBehaviour
                     BGMslider.gameObject.SetActive(false);
                     SEslider.gameObject.SetActive(false);
                     sliderBool = false;
+                   Time.timeScale = 1;
                 }
             }
 
@@ -43,6 +44,7 @@ public class Option : MonoBehaviour
                     BGMslider.gameObject.SetActive(true);
                     SEslider.gameObject.SetActive(true);
                     sliderBool = true;
+                  Time.timeScale = 0;
                 }
             }
     }
