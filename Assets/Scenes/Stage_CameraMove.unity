@@ -123,36 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &5703220 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6723602909191866466, guid: 78fb8bfe3c2b68d4c8eadfd497c252a7, type: 3}
-  m_PrefabInstance: {fileID: 904680543}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &5703226
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5703220}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.0000005, y: 4.0475597, z: 2}
-  m_Center: {x: -0.00000011920932, y: 2.0237799, z: 0.0000009536743}
---- !u!114 &5703227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5703220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 298dd1ec723e8304f925c01f9e7a8299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &137427963 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6723602909481765244, guid: 78fb8bfe3c2b68d4c8eadfd497c252a7, type: 3}
@@ -674,36 +644,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &877143827 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6723602910750666291, guid: 78fb8bfe3c2b68d4c8eadfd497c252a7, type: 3}
-  m_PrefabInstance: {fileID: 904680543}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &877143833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877143827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 298dd1ec723e8304f925c01f9e7a8299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &877143834
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877143827}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.0000005, y: 4.0475597, z: 2}
-  m_Center: {x: -0.00000011920932, y: 2.0237799, z: 0}
 --- !u!1001 &904680543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1129,7 +1069,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0.01
+  m_Height: 1
   m_Radius: 0.7
   m_SlopeLimit: 45
   m_StepOffset: 0.5
