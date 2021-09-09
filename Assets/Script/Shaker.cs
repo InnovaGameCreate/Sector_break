@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Shaker : MonoBehaviour
 {
+    //これがアタッチされたオブジェクトが揺れます。
     public float Timer1;
     public float Timer2;
     public float Timer3;
