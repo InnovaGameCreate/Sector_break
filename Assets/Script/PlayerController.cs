@@ -4,36 +4,31 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private Rigidbody rigidbody;
 
-    [SerializeField]
-    private float speed = 10.0f;
+    public float speed = 20.0F;       //歩行速度
+    public float gravity = 10.0F;    //重力の大きさ
 
-    private void Start()
+    private CharacterController controller;
+    private Vector3 moveDirection = Vector3.zero;
+    public float h, v;
+    // Use this for initialization
+    void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        controller = GetComponent<CharacterController>();
     }
-
     void Update()
     {
-        if (Input.GetKey(KeyCode.A))
-        {
-            rigidbody.AddForce(new Vector3(speed * Time.deltaTime * -1, 0, 0));
-        }
+        h = Input.GetAxis("Horizontal");    //左右矢印キーの値(-1.0~1.0)
+        v = Input.GetAxis("Vertical");      //上下矢印キーの値(-1.0~1.0)
 
-        if (Input.GetKey(KeyCode.D))
+        if (controller.isGrounded)
         {
-            rigidbody.AddForce(new Vector3(speed * Time.deltaTime, 0, 0));
+            moveDirection = new Vector3(h, 0, v);
+            moveDirection.Normalize();
+            moveDirection = transform.TransformDirection(moveDirection);
+            moveDirection *= speed;
         }
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            rigidbody.AddForce(new Vector3(0, 0, speed * Time.deltaTime));
-        }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            rigidbody.AddForce(new Vector3(0, 0, speed * Time.deltaTime * -1));
-        }
+        controller.Move(moveDirection * Time.deltaTime);
+        moveDirection.y -= gravity * Time.deltaTime;
     }
 }
