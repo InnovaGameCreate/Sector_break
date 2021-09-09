@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public float speed = 20.0F;       //歩行速度
-    public float gravity = 10.0F;    //重力の大きさ
+    public float speed = 10.0F;       //歩行速度
+    public float gravity = 25.0F;    //重力の大きさ
 
     private CharacterController controller;
     private Vector3 moveDirection = Vector3.zero;
