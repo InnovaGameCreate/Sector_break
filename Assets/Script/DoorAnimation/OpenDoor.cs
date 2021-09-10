@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class OpenDoor : MonoBehaviour
 {
-    Animator animator;
+    public Animator animator;
     public AudioSource open_door;
+    private bool canOpenDoor;
+
+    public bool CanOpenDoor { get => CanOpenDoor; set => CanOpenDoor = value; }
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +20,8 @@ public class OpenDoor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        Debug.Log("ƒhƒA‚É“–‚½‚è‚Ü‚µ‚½");
+        if (other.gameObject.tag == "Player" && CanOpenDoor)
         {
             animator.SetBool("IsOpen", true);
             open_door.Play();
