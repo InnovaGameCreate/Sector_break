@@ -386,8 +386,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 475404974}
-  player: {fileID: 1631385411}
   panel: {fileID: 552542088}
+  player: {fileID: 1631385411}
 --- !u!1 &233063314
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,8 +695,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1555584131}
-  player: {fileID: 1631385411}
   panel: {fileID: 1264586877}
+  player: {fileID: 1631385411}
 --- !u!65 &351022664
 BoxCollider:
   m_ObjectHideFlags: 0

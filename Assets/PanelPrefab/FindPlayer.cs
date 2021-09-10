@@ -10,14 +10,18 @@ public class FindPlayer : MonoBehaviour
     [SerializeField]
     GameObject text;
     [SerializeField]
-    GameObject player;
-    [SerializeField]
     GameObject panel;
+    [SerializeField]
+    GameObject player;
+
+    private GameObject Player;
+    private GameObject a;
     private void Start()
     {
         panel.SetActive(false);
         text.SetActive(false);
         routine = coroutine();
+        player.GetComponent<PlayerController>().enabled = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -42,12 +46,12 @@ public class FindPlayer : MonoBehaviour
     {
         text.SetActive(true);
         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.F));
-        player.SetActive(false);
+        player.GetComponent<PlayerController>().enabled = false;
         text.SetActive(false);
         panel.SetActive(true);
         yield return null;
         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.F));
-        player.SetActive(true);
+        player.GetComponent<PlayerController>().enabled = true;
         panel.SetActive(false);
         yield break;
     }
