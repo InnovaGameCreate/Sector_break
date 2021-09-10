@@ -5,6 +5,7 @@ using UnityEngine;
 public class OpenDoor : MonoBehaviour
 {
     Animator animator;
+    public AudioSource open_door;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class OpenDoor : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             animator.SetBool("IsOpen", true);
+            open_door.Play();
         }
     }
 
