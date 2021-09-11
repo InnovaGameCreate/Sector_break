@@ -40,13 +40,6 @@ public class DoorStop : MonoBehaviour
     Button_identify script;
 
     OpenDoor DoorScript;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        StartCoroutine("DoorRevive");
-
-    }
     //‘¼‚ÌêŠ‚©‚ç‘I‘ğ‚µ‚Ä‚¢‚é•”‰®‚Ì–¼‘O‚ğ‚Á‚Ä‚­‚é‚æ‚¤‚É‚·‚é
 
     private void Update()
