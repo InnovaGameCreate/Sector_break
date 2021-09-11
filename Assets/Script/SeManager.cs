@@ -5,15 +5,6 @@ using UnityEngine.UI;
 
 public class SeManager : MonoBehaviour
 {
-    public AudioClip sound1;
-    public AudioClip sound2;
-    public AudioClip sound3;
-    public AudioClip sound4;
-    public AudioClip sound5;
-    public AudioClip sound6;
-    public AudioClip sound7;
-    public AudioClip sound8;
-
     public Slider SEslider;
     AudioSource audioSource;
 
@@ -27,11 +18,6 @@ public class SeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKey(KeyCode.A))
-        {
-            audioSource.PlayOneShot(sound1);
-        }
 
     }
 }
