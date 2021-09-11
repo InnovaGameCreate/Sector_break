@@ -1732,6 +1732,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365959463}
   m_CullTransparentMesh: 1
+--- !u!1 &399084575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6723602909294634227, guid: 78fb8bfe3c2b68d4c8eadfd497c252a7, type: 3}
+  m_PrefabInstance: {fileID: 904680543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &429587708
 GameObject:
   m_ObjectHideFlags: 0
@@ -2423,6 +2428,11 @@ CanvasRenderer:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2824823420698734998, guid: 33e9dce7386be8b4ca0f2642e0cd1ea8, type: 3}
   m_PrefabInstance: {fileID: 213695442}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &546556546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6723602909508371119, guid: 78fb8bfe3c2b68d4c8eadfd497c252a7, type: 3}
+  m_PrefabInstance: {fileID: 904680543}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &552542088 stripped
 GameObject:
@@ -13194,6 +13204,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33e9dce7386be8b4ca0f2642e0cd1ea8, type: 3}
+--- !u!1 &1491229638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6723602910650779886, guid: 78fb8bfe3c2b68d4c8eadfd497c252a7, type: 3}
+  m_PrefabInstance: {fileID: 904680543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1495875811 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6723602911067420457, guid: 78fb8bfe3c2b68d4c8eadfd497c252a7, type: 3}
@@ -14557,6 +14572,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1797036659 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7841111028484341087, guid: 78fb8bfe3c2b68d4c8eadfd497c252a7, type: 3}
+  m_PrefabInstance: {fileID: 904680543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1798245898
 GameObject:
   m_ObjectHideFlags: 0
@@ -14730,6 +14750,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33e9dce7386be8b4ca0f2642e0cd1ea8, type: 3}
+--- !u!1 &1806415390 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6723602911101720614, guid: 78fb8bfe3c2b68d4c8eadfd497c252a7, type: 3}
+  m_PrefabInstance: {fileID: 904680543}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1830205126
 GameObject:
   m_ObjectHideFlags: 0
@@ -15919,6 +15944,26 @@ PrefabInstance:
       propertyPath: door_Livingroom
       value: 
       objectReference: {fileID: 137427963}
+    - target: {fileID: 6163571746469739402, guid: cd7452d2360de0f42ae161793c353493, type: 3}
+      propertyPath: O2room
+      value: 
+      objectReference: {fileID: 546556546}
+    - target: {fileID: 6163571746469739402, guid: cd7452d2360de0f42ae161793c353493, type: 3}
+      propertyPath: Coffeeroom
+      value: 
+      objectReference: {fileID: 399084575}
+    - target: {fileID: 6163571746469739402, guid: cd7452d2360de0f42ae161793c353493, type: 3}
+      propertyPath: Engineroom
+      value: 
+      objectReference: {fileID: 1797036659}
+    - target: {fileID: 6163571746469739402, guid: cd7452d2360de0f42ae161793c353493, type: 3}
+      propertyPath: Livingroom
+      value: 
+      objectReference: {fileID: 1491229638}
+    - target: {fileID: 6163571746469739402, guid: cd7452d2360de0f42ae161793c353493, type: 3}
+      propertyPath: Storageroom
+      value: 
+      objectReference: {fileID: 1806415390}
     - target: {fileID: 6163571746469739402, guid: cd7452d2360de0f42ae161793c353493, type: 3}
       propertyPath: door_O2tank
       value: 
