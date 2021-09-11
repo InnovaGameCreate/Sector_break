@@ -13,10 +13,12 @@ public class Volume : MonoBehaviour
     public Slider SEslider;
     private bool BGMsliderBool;
     private bool SEsliderBool;
+    [SerializeField] GameObject startPanel;
 
     // Start is called before the first frame update
     void Start()
     {
+        startPanel.SetActive(false);
         OptionButton.SetActive(true);
         BackButton.SetActive(false);
         BGMslider.gameObject.SetActive(false);
@@ -30,6 +32,7 @@ public class Volume : MonoBehaviour
         SEtext.text = "SE‰¹—Ê";
         OptionButton.SetActive(false);
         BackButton.SetActive(true);
+        startPanel.SetActive(true);
 
         if (BGMsliderBool == false)
         {
@@ -57,13 +60,18 @@ public class Volume : MonoBehaviour
     {
         BGMtext.text = "";
         SEtext.text = "";
-
+        startPanel.SetActive(false);
         OptionButton.SetActive(true);
         BackButton.SetActive(false);
         BGMslider.gameObject.SetActive(false);
         SEslider.gameObject.SetActive(false);
         BGMsliderBool = false;
         SEsliderBool = false;
+    }
+
+    public void SelectStart()
+    { 
+        
     }
 
     // Update is called once per frame
