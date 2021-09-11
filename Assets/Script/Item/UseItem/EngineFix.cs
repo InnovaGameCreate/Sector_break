@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class EngineFix : MonoBehaviour
 {
-    public bool IsDoorActive = false;
+    public bool IsEngineActive = false;
     private bool IsOnce = false;
 
     [SerializeField]
@@ -25,7 +25,7 @@ public class EngineFix : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && IsEngineActive == false)
         {
             textgackGround.SetActive(true);
             remainTextParts.enabled = true;
@@ -35,7 +35,7 @@ public class EngineFix : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && IsEngineActive == false)
         {
             textgackGround.SetActive(false);
             remainTextParts.enabled = false;
@@ -63,7 +63,11 @@ public class EngineFix : MonoBehaviour
         else
         {
             remainTextParts.text = "èCóùäÆóπ";
-            IsDoorActive = true;
+            IsEngineActive = true;
+            yield return new WaitForSeconds(3.0f);
+            textgackGround.SetActive(false);
+            remainTextParts.enabled = false;
+
         }
     }
 }
