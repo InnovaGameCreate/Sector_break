@@ -6,8 +6,10 @@ public class EventManager : MonoBehaviour
 {
     public float iraira = 100.0f;
 
-    public float fixParts = 3.0f;
+    public float fixPartsEngine = 3.0f;
 
+    [SerializeField]
+    GameObject enginefix;
     public static EventManager instance;
     private void Awake()
     {
@@ -82,8 +84,7 @@ public class EventManager : MonoBehaviour
 
     IEnumerator metal()
     {
-        fixParts = fixParts - 1;
-        Debug.Log("C—Š®—¹‚Ü‚Åc‚è" + fixParts + "ŒÂ");
+        enginefix.GetComponent<EngineFix>().ClickMetal();
         yield break;
     }
 
