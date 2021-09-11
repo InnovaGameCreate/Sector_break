@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.21888724, g: 0.20811641, b: 0.37221676, a: 1}
+  m_IndirectSpecularColor: {r: 0.21882716, g: 0.20815393, b: 0.37220562, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1202,7 +1202,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8707683654192510655, guid: 636cdfdf8f4404049980e8c2fed55cdb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 636cdfdf8f4404049980e8c2fed55cdb, type: 3}
@@ -4326,6 +4326,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802472568}
   m_CullTransparentMesh: 1
+--- !u!1 &807231790 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8707683654192510655, guid: 636cdfdf8f4404049980e8c2fed55cdb, type: 3}
+  m_PrefabInstance: {fileID: 261176055}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &819957546
 GameObject:
   m_ObjectHideFlags: 0
@@ -10933,7 +10938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 144951855}
   ItemBar: {fileID: 1594789208}
-  Explosion: {fileID: 8707683654192510655, guid: 636cdfdf8f4404049980e8c2fed55cdb, type: 3}
+  Explosion: {fileID: 807231790}
 --- !u!1 &952118550
 GameObject:
   m_ObjectHideFlags: 0
