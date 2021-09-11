@@ -36,7 +36,7 @@ public class DoorStop : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(DoorScript);
+
     }
 
     public void selectRoom(string roomName)
