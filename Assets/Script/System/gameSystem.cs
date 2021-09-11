@@ -28,7 +28,7 @@ public class gameSystem : MonoBehaviour
         yield return new WaitUntil(() => isIncindent1 && isIncindent2 && isIncindent3);
         yield return new WaitForSeconds(timePast1);
         cameraShake();
-        O2Incident();
+        //O2Incident();
         yield return new WaitForSeconds(timePast2);
         cameraShake();
         PowerIncident();
@@ -42,10 +42,12 @@ public class gameSystem : MonoBehaviour
 
     }
 
-    private void O2Incident()
+    /*private void O2Incident()
     {
 
-    }
+    }*/
+
+    //O2incidentについてはO2incidentというスクリプトに書いてある。
     private void PowerIncident()
     {
 
