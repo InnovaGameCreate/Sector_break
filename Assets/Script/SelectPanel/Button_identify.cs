@@ -6,7 +6,13 @@ using UnityEngine.UI;
 public class Button_identify : MonoBehaviour
 {
 
-    public bool O2tank = false;
+    public bool O2 = true;
+    public bool Storage = true;
+    public bool Engine = true;
+    public bool Coffee = true;
+    public bool Living = true;
+
+
     [SerializeField]
     GameObject door_O2tank;
 
@@ -26,27 +32,40 @@ public class Button_identify : MonoBehaviour
         switch (number)
         {
             case 0:
-              
-                if (O2tank == true)
+
+                if (O2 == true)
                 {
-                    Debug.Log("O2タンクを封鎖しますか？");
+                    Debug.Log("O2roomを封鎖しますか？");
                 }
                 break;
             case 1:
-                door_Strage.GetComponent<OpenDoor>().enabled = false;
+                if (Storage == true)
+                {
+                    Debug.Log("ストレージルームを封鎖しますか？");
+                }
                 break;
             case 2:
-                door_Engineroom.GetComponent<OpenDoor>().enabled = false;
+                if (Engine == true)
+                {
+                    Debug.Log("エンジンルームを封鎖しますか？");
+                }
                 break;
             case 3:
-                door_Coffeeroom.GetComponent<OpenDoor>().enabled = false;
+                if (Coffee == true)
+                {
+                    Debug.Log("コーヒールームを封鎖しますか？");
+                }
                 break;
             case 4:
-                door_Livingroom.GetComponent<OpenDoor>().enabled = false;
+                if (Living == true)
+                {
+                    Debug.Log("リビングルームを封鎖しますか？");
+                }
                 break;
             default:
                 break;
         }//区画の各ボタンにそれぞれ０～４の異なる引数を渡してください。
-
     }
-}
+        
+    }
+

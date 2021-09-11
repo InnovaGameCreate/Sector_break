@@ -6,6 +6,10 @@ public class OpenDoor : MonoBehaviour
 {
     Animator animator;
     public AudioSource open_door;
+    private bool canOpendoor;
+
+    public bool CanOpendoor { get => canOpendoor; set => canOpendoor = value; }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +19,7 @@ public class OpenDoor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && CanOpendoor == true)
         {
             animator.SetBool("IsOpen", true);
             open_door.Play();
