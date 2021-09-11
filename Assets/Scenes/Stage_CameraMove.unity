@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0.99999946, b: 0.99999946, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -803,6 +803,8 @@ GameObject:
   m_Component:
   - component: {fileID: 307717650}
   - component: {fileID: 307717651}
+  - component: {fileID: 307717652}
+  - component: {fileID: 307717653}
   m_Layer: 0
   m_Name: CaffeSpaceCamera
   m_TagString: Untagged
@@ -867,6 +869,34 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &307717652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307717649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939edc51ed46ca4da9e9afd32201153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SobelResolution: 3
+  outlineColor: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 0}
+--- !u!114 &307717653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307717649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42cd8dcae69d178488f5efa28e7c7e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: 95703b29f49b899499233ea7308bb800, type: 3}
+  BlockCount: 320
 --- !u!1 &325283194 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 809771221707771958, guid: 033eb242724f7d349830ba05c1285c87, type: 3}
@@ -1402,6 +1432,8 @@ GameObject:
   m_Component:
   - component: {fileID: 514738668}
   - component: {fileID: 514738669}
+  - component: {fileID: 514738670}
+  - component: {fileID: 514738671}
   m_Layer: 0
   m_Name: EngineRoomCamera
   m_TagString: Untagged
@@ -1466,6 +1498,34 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &514738670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514738667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939edc51ed46ca4da9e9afd32201153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SobelResolution: 3
+  outlineColor: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 0}
+--- !u!114 &514738671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514738667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42cd8dcae69d178488f5efa28e7c7e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: 95703b29f49b899499233ea7308bb800, type: 3}
+  BlockCount: 320
 --- !u!1 &520139978
 GameObject:
   m_ObjectHideFlags: 0
@@ -2022,6 +2082,8 @@ GameObject:
   m_Component:
   - component: {fileID: 622562123}
   - component: {fileID: 622562124}
+  - component: {fileID: 622562125}
+  - component: {fileID: 622562126}
   m_Layer: 0
   m_Name: CockPitB1Camera
   m_TagString: Untagged
@@ -2086,6 +2148,34 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &622562125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622562122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939edc51ed46ca4da9e9afd32201153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SobelResolution: 3
+  outlineColor: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 0}
+--- !u!114 &622562126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622562122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42cd8dcae69d178488f5efa28e7c7e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: 95703b29f49b899499233ea7308bb800, type: 3}
+  BlockCount: 320
 --- !u!1 &627075946
 GameObject:
   m_ObjectHideFlags: 0
@@ -2525,6 +2615,8 @@ GameObject:
   m_Component:
   - component: {fileID: 692910963}
   - component: {fileID: 692910964}
+  - component: {fileID: 692910965}
+  - component: {fileID: 692910966}
   m_Layer: 0
   m_Name: LivingRoomCamera
   m_TagString: Untagged
@@ -2589,6 +2681,34 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &692910965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692910962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939edc51ed46ca4da9e9afd32201153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SobelResolution: 3
+  outlineColor: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 0}
+--- !u!114 &692910966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692910962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42cd8dcae69d178488f5efa28e7c7e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: 95703b29f49b899499233ea7308bb800, type: 3}
+  BlockCount: 320
 --- !u!1 &704841439
 GameObject:
   m_ObjectHideFlags: 0
@@ -2699,6 +2819,8 @@ GameObject:
   m_Component:
   - component: {fileID: 709803300}
   - component: {fileID: 709803301}
+  - component: {fileID: 709803302}
+  - component: {fileID: 709803303}
   m_Layer: 0
   m_Name: O2Tank01Camera
   m_TagString: Untagged
@@ -2763,6 +2885,34 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &709803302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709803299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939edc51ed46ca4da9e9afd32201153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SobelResolution: 3
+  outlineColor: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 0}
+--- !u!114 &709803303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709803299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42cd8dcae69d178488f5efa28e7c7e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: 95703b29f49b899499233ea7308bb800, type: 3}
+  BlockCount: 320
 --- !u!1 &734718184 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2824823420698734998, guid: 33e9dce7386be8b4ca0f2642e0cd1ea8, type: 3}
@@ -3281,9 +3431,11 @@ GameObject:
   m_Component:
   - component: {fileID: 983908261}
   - component: {fileID: 983908262}
+  - component: {fileID: 983908263}
+  - component: {fileID: 983908264}
   m_Layer: 0
   m_Name: CockPit1FCamera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3345,6 +3497,34 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &983908263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983908260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939edc51ed46ca4da9e9afd32201153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SobelResolution: 3
+  outlineColor: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 0}
+--- !u!114 &983908264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983908260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42cd8dcae69d178488f5efa28e7c7e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: 95703b29f49b899499233ea7308bb800, type: 3}
+  BlockCount: 320
 --- !u!1 &995848785
 GameObject:
   m_ObjectHideFlags: 0
@@ -6034,6 +6214,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1743396259}
   - component: {fileID: 1743396260}
+  - component: {fileID: 1743396261}
+  - component: {fileID: 1743396262}
   m_Layer: 0
   m_Name: O2Tank02Camera
   m_TagString: Untagged
@@ -6098,6 +6280,34 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1743396261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743396258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939edc51ed46ca4da9e9afd32201153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SobelResolution: 3
+  outlineColor: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 0}
+--- !u!114 &1743396262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743396258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42cd8dcae69d178488f5efa28e7c7e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: 95703b29f49b899499233ea7308bb800, type: 3}
+  BlockCount: 320
 --- !u!1 &1798245898
 GameObject:
   m_ObjectHideFlags: 0
@@ -6387,6 +6597,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1930940045}
   - component: {fileID: 1930940046}
+  - component: {fileID: 1930940047}
+  - component: {fileID: 1930940048}
   m_Layer: 0
   m_Name: StrageCamera
   m_TagString: Untagged
@@ -6451,6 +6663,34 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1930940047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930940044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d939edc51ed46ca4da9e9afd32201153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SobelResolution: 3
+  outlineColor: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 0}
+--- !u!114 &1930940048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930940044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42cd8dcae69d178488f5efa28e7c7e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: 95703b29f49b899499233ea7308bb800, type: 3}
+  BlockCount: 320
 --- !u!1 &1995866418
 GameObject:
   m_ObjectHideFlags: 0
