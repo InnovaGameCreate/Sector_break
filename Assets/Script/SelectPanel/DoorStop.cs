@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class DoorStop : MonoBehaviour
 {
-    //O2incidentÇÃÉNÉäÉAèåèópÇÃbool
-    bool O2_purgeClear = false;
+    
 
     [SerializeField]
     GameObject door_O2tank;
@@ -26,6 +25,7 @@ public class DoorStop : MonoBehaviour
     Button_identify script;
 
     OpenDoor DoorScript;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +49,7 @@ public class DoorStop : MonoBehaviour
         {
             Debug.Log(roomName);
             DoorScript = door_O2tank.GetComponent<OpenDoor>();
-            O2_purgeClear = true;
+            gameSystem.isIncindent2 = true;
         } 
         else if (script.Storage == true && roomName == "Storage")
             DoorScript = door_Storage.GetComponent<OpenDoor>();
