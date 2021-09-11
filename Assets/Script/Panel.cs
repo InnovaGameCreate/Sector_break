@@ -5,13 +5,18 @@ using UnityEngine.UI;
 
 public class Panel : MonoBehaviour
 {
-    [SerializeField] GameObject startPanel;
+    [SerializeField] GameObject CheckPanel;
 
    
     // Start is called before the first frame update
     void Start()
     {
-        startPanel.SetActive(true);
+        CheckPanel.SetActive(false);
+    }
+
+    public void OnClick()
+    {
+        CheckPanel.SetActive(true);
     }
 
     // Update is called once per frame
