@@ -15,6 +15,7 @@ public class OpenDoor : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         animator.SetBool("IsOpen", false);
+        //CanOpendoor = false;
     }
 
     private void OnTriggerEnter(Collider other)
