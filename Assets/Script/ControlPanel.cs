@@ -15,27 +15,28 @@ public class ControlPanel : MonoBehaviour
         image = GetComponent<Image>();
     }
 
+    public void onclick()
+    {
+        if (Change)
+        {
+            // スプライトオブジェクトの変更
+            //（配列 sprite[0] に格納したスプライトオブジェクトを変数 image に格納したImage コンポーネントに割り当て）
+            image.sprite = sprite[0];
+            Change = false;
+        }
+        // スプライトオブジェクトの変更フラグが false の場合
+        else
+        {
+            // スプライトオブジェクトの変更
+            //（配列 sprite[1] に格納したスプライトオブジェクトを変数 image に格納したImage コンポーネントに割り当て）
+            image.sprite = sprite[1];
+            Change = true;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            // スプライトオブジェクトの変更フラグが true の場合
-            if (Change)
-            {
-                // スプライトオブジェクトの変更
-                //（配列 sprite[0] に格納したスプライトオブジェクトを変数 image に格納したImage コンポーネントに割り当て）
-                image.sprite = sprite[0];
-                Change = false;
-            }
-            // スプライトオブジェクトの変更フラグが false の場合
-            else
-            {
-                // スプライトオブジェクトの変更
-                //（配列 sprite[1] に格納したスプライトオブジェクトを変数 image に格納したImage コンポーネントに割り当て）
-                image.sprite = sprite[1];
-                Change = true;
-            }
-        }
+
     }
 }
