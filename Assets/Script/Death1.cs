@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Death1 : MonoBehaviour
 {
+    [SerializeField]
+    Player player;
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine("Death");
         
     }
 
@@ -14,5 +17,14 @@ public class Death1 : MonoBehaviour
     void Update()
     {
         
+    }
+    IEnumerator Death()
+    {
+        yield return new WaitForSeconds(0f);
+       player.GetComponent<PlayerController>();
+        //player.PlayerController.enabled = false;
+        
+        
+
     }
 }
