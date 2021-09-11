@@ -16,7 +16,7 @@ public class Death1 : MonoBehaviour
     void Start()
     {
         StartCoroutine("Death");
-        Explosion.SetActive(true);
+
     }
 
     // Update is called once per frame
@@ -27,7 +27,8 @@ public class Death1 : MonoBehaviour
     IEnumerator Death()
     {
         Debug.Log("€‚ñ‚¾‚æ");
-        yield return new WaitForSeconds(0f);
+        yield return new WaitForSeconds(2f);
+        Explosion.SetActive(true);//ƒAƒjƒƒVƒ‡ƒ“‚ÌÄ¶
         Player.GetComponent<PlayerController>().enabled = false;
         ItemBar.SetActive(false);
         yield return new WaitForSeconds(5f);
