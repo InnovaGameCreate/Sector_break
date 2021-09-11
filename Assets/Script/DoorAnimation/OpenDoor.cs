@@ -6,7 +6,7 @@ public class OpenDoor : MonoBehaviour
 {
     Animator animator;
     public AudioSource open_door;
-    private bool canOpendoor;
+    public bool canOpendoor = true;
 
     public bool CanOpendoor { get => canOpendoor; set => canOpendoor = value; }
 
