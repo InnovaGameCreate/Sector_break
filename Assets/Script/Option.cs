@@ -10,10 +10,12 @@ public class Option : MonoBehaviour
     public Slider BGMslider;
     public Slider SEslider;
     private bool sliderBool;
+    [SerializeField] GameObject optionPanel;
 
     // Start is called before the first frame update
     void Start()
     {
+        optionPanel.SetActive(false);
         BGMslider.gameObject.SetActive(false);
         SEslider.gameObject.SetActive(false);
         sliderBool = false;
@@ -28,6 +30,7 @@ public class Option : MonoBehaviour
                 {
                     BGMtext.text = "";
                     SEtext.text = "";
+                    optionPanel.SetActive(false);
                     BGMslider.gameObject.SetActive(false);
                     SEslider.gameObject.SetActive(false);
                     sliderBool = false;
@@ -41,6 +44,7 @@ public class Option : MonoBehaviour
                 {
                     BGMtext.text = "BGM‰¹—Ê";
                     SEtext.text = "SE‰¹—Ê";
+                    optionPanel.SetActive(true);
                     BGMslider.gameObject.SetActive(true);
                     SEslider.gameObject.SetActive(true);
                     sliderBool = true;
