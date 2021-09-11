@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class EventManager : MonoBehaviour
 {
-    public float iraira = 100.0f;
 
     public float fixPartsEngine = 3.0f;
+    public float fixPartsDoor = 5.0f;
 
     [SerializeField]
     GameObject enginefix;
+    [SerializeField]
+    GameObject doorfix;
     public static EventManager instance;
     private void Awake()
     {
@@ -20,7 +22,7 @@ public class EventManager : MonoBehaviour
     }
     private void Start()
     {
-        Debug.Log(iraira);
+
     }
 
     public void EventHandle(Item.Type type)
@@ -77,8 +79,7 @@ public class EventManager : MonoBehaviour
 
     IEnumerator electronical()
     {
-        iraira = iraira + 5;
-        Debug.Log(iraira);
+        doorfix.GetComponent<DoorFix>().ClickElectronic();
         yield break;
     }
 
