@@ -36,13 +36,13 @@ public class DoorStop : MonoBehaviour
 
     private void Update()
     {
-
+        Debug.Log(script);
     }
 
     public void selectRoom(string roomName)
     {
-        
-            script = GameObject.Find("MainPanel").GetComponent<Button_identify>();
+        Debug.Log("a");
+         script = GameObject.Find("MainPanel").GetComponent<Button_identify>();
 
         
         if (script.O2 == true && roomName == "O2")
