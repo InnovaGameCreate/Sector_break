@@ -4454,8 +4454,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 13, y: 3, z: 6}
-  m_Center: {x: -3, y: 3, z: 7}
+  m_Size: {x: 2.5, y: 3, z: 4}
+  m_Center: {x: -9, y: 3, z: 9}
 --- !u!1 &734718184 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2824823420698734998, guid: 33e9dce7386be8b4ca0f2642e0cd1ea8, type: 3}
@@ -5901,6 +5901,10 @@ PrefabInstance:
     - target: {fileID: 1913918725, guid: 78fb8bfe3c2b68d4c8eadfd497c252a7, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1917617659, guid: 78fb8bfe3c2b68d4c8eadfd497c252a7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1929268118, guid: 78fb8bfe3c2b68d4c8eadfd497c252a7, type: 3}
       propertyPath: m_Layer
