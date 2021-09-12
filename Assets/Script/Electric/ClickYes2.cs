@@ -18,7 +18,8 @@ public class ClickYes2 : MonoBehaviour
 
     [SerializeField]
     GameObject buttonA;
-
+    [SerializeField]
+    GameObject player;
     private void Start()
     {
         StartCoroutine("engineTimer");
@@ -31,6 +32,7 @@ public class ClickYes2 : MonoBehaviour
         buttonA.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
         StartCoroutine("engineTimer");
         checkPanel.SetActive(false);
+        player.GetComponent<PlayerController>().enabled = true;
     }
 
     IEnumerator engineTimer()

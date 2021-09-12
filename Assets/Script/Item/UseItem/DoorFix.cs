@@ -14,6 +14,15 @@ public class DoorFix : MonoBehaviour
     Text remainTextParts;
     [SerializeField]
     float fixPartsEngine;
+    [SerializeField]
+    GameObject door_Coffeeroom;
+
+    OpenDoor doorScript;
+
+    private void Awake()
+    {
+        door_Coffeeroom.GetComponent<OpenDoor>().CanOpendoor = false;
+    }
     private void Start()
     {
         textgackGround.SetActive(false);
@@ -66,7 +75,7 @@ public class DoorFix : MonoBehaviour
             IsEngineActive = true;
             yield return new WaitForSeconds(1.0f);
             textgackGround.SetActive(false);
-            
+            door_Coffeeroom.GetComponent<OpenDoor>().CanOpendoor = true;
             remainTextParts.enabled = false;
 
         }
