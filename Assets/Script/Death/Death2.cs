@@ -11,8 +11,6 @@ public class Death2 : MonoBehaviour
     GameObject ItemBar;
     [SerializeField]
     GameObject Explosion;
-    [SerializeField]
-    GameObject directionalLight;
     private bool dead = true;
 
     public bool Dead { get => dead; set => dead = value; }
@@ -40,7 +38,6 @@ public class Death2 : MonoBehaviour
         Player.GetComponent<PlayerController>().enabled = false;
         ItemBar.SetActive(false);
         yield return new WaitForSeconds(1f);
-        directionalLight.SetActive(false);
         Explosion.SetActive(true);//ƒAƒjƒƒVƒ‡ƒ“‚ÌÄ¶
         yield return new WaitForSeconds(6f);
         SceneManager.LoadScene("Stage_CameraMove");
