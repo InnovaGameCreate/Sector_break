@@ -15,7 +15,6 @@ public class electricData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         electric = 100.0f;
         StartCoroutine("electricNumber");
         StartCoroutine("elctricCounter");
@@ -63,6 +62,4 @@ public class electricData : MonoBehaviour
         electricSupply -= 30;
         yield break;
     }
-
-
 }

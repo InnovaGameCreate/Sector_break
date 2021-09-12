@@ -12244,6 +12244,7 @@ MonoBehaviour:
   enginefix: {fileID: 1414351006}
   doorfix: {fileID: 1333656546}
   solarfix: {fileID: 734619551}
+  stressfix: {fileID: 126341261}
 --- !u!4 &1038168767
 Transform:
   m_ObjectHideFlags: 0
