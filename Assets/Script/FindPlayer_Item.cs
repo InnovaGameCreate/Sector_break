@@ -17,12 +17,16 @@ public class FindPlayer_Item : MonoBehaviour
 
     [SerializeField]
     GameObject IsSlot;
-    private void Start()
+    private void Awake()
     {
-        item = ItemGenerator.instance.Spawn(itemType);
         text.SetActive(false);
         routine = coroutine();
         IsSlot = GameObject.Find("Slot");
+    }
+
+    private void Start()
+    {
+        item = ItemGenerator.instance.Spawn(itemType);
     }
 
     private void OnTriggerEnter(Collider other)
