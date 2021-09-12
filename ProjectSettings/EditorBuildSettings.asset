@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Title.unity
     guid: fb58a0c2b6dacc241984c5c3402528f7
   - enabled: 1
+    path: Assets/Scenes/Space.unity
+    guid: be945f49cfefd3f47baa7dae9dfa8ec2
+  - enabled: 1
     path: Assets/Scenes/Stage_CameraMove.unity
     guid: 62747756e12130c4da390066b1dbacb3
   m_configObjects: {}
