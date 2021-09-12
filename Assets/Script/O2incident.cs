@@ -25,7 +25,7 @@ public class O2incident : MonoBehaviour
     }
     IEnumerator incident()
     {
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(300f);
         if (gameSystem.isIncindent2 != true)//ここの処理の仕方が分からないので、分かり次第修正。一応今はデバックのみ
         {
             Debug.Log("You Dead");
