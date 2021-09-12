@@ -11,28 +11,37 @@ public class Death1 : MonoBehaviour
     GameObject ItemBar;
     [SerializeField]
     GameObject Explosion;
-    
+    private bool dead = true;
+
+    public bool Dead { get => dead; set => dead = value; }
+
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine("Death");
+        
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
+         
+        if(Dead == false)
+        {
+            StartCoroutine("Death");
+        }
+        
     }
     IEnumerator Death()
     {
         Debug.Log("死んだよ");
-        yield return new WaitForSeconds(2f);
-        Explosion.SetActive(true);//アニメションの再生
-        Player.GetComponent<PlayerController>().enabled = false;
+        yield return new WaitForSeconds(0f);
+       Player.GetComponent<PlayerController>().enabled = false;
         ItemBar.SetActive(false);
         yield return new WaitForSeconds(5f);
-        
+         Explosion.SetActive(true);//アニメションの再生
+        yield return new WaitForSeconds(6f);
+        SceneManager.LoadScene("Stage_CameraMove");
 
     }
 }

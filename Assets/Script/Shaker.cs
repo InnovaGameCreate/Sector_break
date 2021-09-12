@@ -5,9 +5,7 @@ using UnityEngine;
 public class Shaker : MonoBehaviour
 {
     //これがアタッチされたオブジェクトが揺れます。
-    public float Timer1;
-    public float Timer2;
-    public float Timer3;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -25,11 +23,12 @@ public class Shaker : MonoBehaviour
     }
     IEnumerator shake()
     {
-        yield return new WaitForSeconds(Timer1);
+        yield return new WaitForSeconds(150f);
+        Debug.Log("揺れているようだ");
         iTween.ShakePosition(this.gameObject, iTween.Hash("x", 2.3f, "y", 2.0f, "z", 2.0f, "time", 3.0f));
-        yield return new WaitForSeconds(Timer2);
+        yield return new WaitForSeconds(150f);
         iTween.ShakePosition(this.gameObject, iTween.Hash("x", 2.3f, "y", 2.0f, "z", 2.0f, "time", 3.0f));
-        yield return new WaitForSeconds(Timer3);
+        yield return new WaitForSeconds(150f);
         iTween.ShakePosition(this.gameObject, iTween.Hash("x", 2.3f, "y", 2.0f, "z", 2.0f, "time", 3.0f));
 
     }
