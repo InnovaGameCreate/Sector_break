@@ -14,6 +14,8 @@ public class EventManager : MonoBehaviour
     GameObject doorfix;
     [SerializeField]
     GameObject solarfix;
+    [SerializeField]
+    GameObject stressfix;
     public static EventManager instance;
     private void Awake()
     {
@@ -93,11 +95,13 @@ public class EventManager : MonoBehaviour
 
     IEnumerator spaceFood()
     {
+        stressfix.GetComponent<StressData>().eating();
         yield break;
     }
 
     IEnumerator water()
     {
+        stressfix.GetComponent<StressData>().eating();
         yield break;
     }
 
