@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StressData : MonoBehaviour
 {
     public float stress;
 
+    [SerializeField]
+    Text stressde;
     Death2 death2;
     void Start()
     {
@@ -13,6 +16,10 @@ public class StressData : MonoBehaviour
         StartCoroutine("electricNumber");
     }
 
+    private void Update()
+    {
+        stressde.text = "ƒXƒgƒŒƒX"+stress.ToString("0"); 
+    }
     public void eating()
     {
         stress += 20;
