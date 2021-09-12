@@ -562,7 +562,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   open_door: {fileID: 429587709}
-  canOpendoor: 1
 --- !u!65 &137427970
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1206,7 +1205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8707683654192510655, guid: 636cdfdf8f4404049980e8c2fed55cdb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 636cdfdf8f4404049980e8c2fed55cdb, type: 3}
@@ -11237,7 +11236,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912600741}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 48a55d8d6f74a2042ab2a97cf713d1e6, type: 3}
   m_Name: 
@@ -13794,6 +13793,7 @@ MonoBehaviour:
   textgackGround: {fileID: 426432313}
   remainTextParts: {fileID: 1038145331}
   fixPartsEngine: 5
+  door_Coffeeroom: {fileID: 1333656546}
 --- !u!1 &1338518348
 GameObject:
   m_ObjectHideFlags: 0
@@ -14088,6 +14088,7 @@ MonoBehaviour:
   electricManager: {fileID: 1126810886}
   checkPanel: {fileID: 1495556889}
   buttonA: {fileID: 1378420933}
+  player: {fileID: 144951855}
 --- !u!1 &1414351006 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9146797394606176954, guid: 78fb8bfe3c2b68d4c8eadfd497c252a7, type: 3}
@@ -16071,7 +16072,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1779369057}
-        m_TargetAssemblyTypeName: ClickNo, Assembly-CSharp
+        m_TargetAssemblyTypeName: ClickNo2, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -16129,11 +16130,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1779369052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19db4e5d820f1b468aef134b719217b, type: 3}
+  m_Script: {fileID: 11500000, guid: 298e9a36e0a7a1a4fb19738538fb39e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   checkPanel: {fileID: 1495556889}
   buttonA: {fileID: 1779369052}
+  player: {fileID: 144951855}
 --- !u!1 &1781036816
 GameObject:
   m_ObjectHideFlags: 0

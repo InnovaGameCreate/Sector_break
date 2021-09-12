@@ -14,7 +14,7 @@ public class EngineFix : MonoBehaviour
     Text remainTextParts;
     [SerializeField]
     float fixPartsEngine;
-    private void Start()
+    private void Awake()
     {
         textgackGround.SetActive(false);
         remainTextParts.enabled = false;
