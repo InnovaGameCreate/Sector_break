@@ -31,6 +31,12 @@ public class Button_identify : MonoBehaviour
 
     [SerializeField] GameObject Livingroom;
 
+    [SerializeField]
+    Text checktext;
+
+    [SerializeField]
+    GameObject elekidata;
+
     public void OnClick(int number)
     {
         switch (number)
@@ -39,51 +45,36 @@ public class Button_identify : MonoBehaviour
 
                 if (O2 == true) 
                 {
-                    Debug.Log("O2roomを封鎖しますか？");
-                    if (Input.GetButton("Yes"))
-                    {
-                        O2tank.SetActive(false);
-                    }
+                    checktext.text = "O2roomを封鎖しますか？";
+                    elekidata.GetComponent<electricData>().O2room();
                 }
                 break;
             case 1:
                 if (Storage == true)
                 {
-                    Debug.Log("ストレージルームを封鎖しますか？");
-                    if (Input.GetButton("Yes"))
-                    {
-                        Strage.SetActive(false);
-                    }
+                    checktext.text = "ストレージルームを封鎖しますか？";
+                    elekidata.GetComponent<electricData>().strage();
                 }
                 break;
             case 2:
                 if (Engine == true)
                 {
-                    Debug.Log("エンジンルームを封鎖しますか？");
-                    if (Input.GetButton("Yes"))
-                    {
-                        Engineroom.SetActive(false);
-                    }
+                    checktext.text = "エンジンルームを封鎖しますか？";
+                    elekidata.GetComponent<electricData>().engine();
                 }
                 break;
             case 3:
                 if (Coffee == true)
                 {
-                    Debug.Log("コーヒールームを封鎖しますか？");
-                    if (Input.GetButton("Yes"))
-                    {
-                        Coffeeroom.SetActive(false);
-                    }
+                    checktext.text = "コーヒールームを封鎖しますか？";
+                    elekidata.GetComponent<electricData>().coffee();
                 }
                 break;
             case 4:
                 if (Living == true)
                 {
-                    Debug.Log("リビングルームを封鎖しますか？");
-                    if (Input.GetButton("Yes"))
-                    {
-                        Livingroom.SetActive(false);
-                    }
+                    checktext.text = "リビングルームを封鎖しますか？";
+                    elekidata.GetComponent<electricData>().living();
                 }
                 break;
             default:

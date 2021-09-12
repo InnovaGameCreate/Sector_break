@@ -31,6 +31,30 @@ public class electricData : MonoBehaviour
         electricSupply += 40;
     }
 
+    public void O2room()
+    {
+        electricComsume -= 30;
+    }
+
+    public void strage()
+    {
+        electricComsume -= 10;
+    }
+
+    public void engine()
+    {
+        electricComsume -= 20;
+    }
+
+    public void coffee()
+    {
+        electricComsume -= 5;
+    }
+
+    public void living()
+    {
+        electricComsume -= 5;
+    }
     private void Update()
     {
         electronic.text = "ƒGƒ“ƒWƒ“"+electric.ToString("0");
