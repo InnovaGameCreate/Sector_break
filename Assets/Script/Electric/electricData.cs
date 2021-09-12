@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class electricData : MonoBehaviour
 {
     public float electric;
     private float electricSupply = 75.0f;
     public float electricComsume = 95.0f;
-    public float fixpanel;
-    public float engineboost;
-    public float bairitu;
+
+    [SerializeField]
+    Text electronic;
 
     Death2 death2;
     // Start is called before the first frame update
@@ -22,24 +23,24 @@ public class electricData : MonoBehaviour
 
     public void EngineClick()
     {
-        electric -= engineboost;
+        electric -= 40;
     }
 
     public void solarfix()
     {
-        electricSupply += fixpanel;
+        electricSupply += 40;
     }
 
     private void Update()
     {
-        //electric += 0.1f * (electricSupply - electricComsume);
+        electronic.text = "ƒGƒ“ƒWƒ“"+electric.ToString("0");
     }
 
     IEnumerator electricNumber()
     {
         for (electric = 100; electric > 0;)
         {
-            electric += bairitu * (electricSupply  - electricComsume);
+            electric += 0.01f * (electricSupply  - electricComsume);
             yield return new WaitForSeconds(1.0f);
         }
         if(electric < 0)
