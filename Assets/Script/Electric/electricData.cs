@@ -13,7 +13,12 @@ public class electricData : MonoBehaviour
 
     public void EngineClick()
     {
-        electric += 20;
+        electric -= 50;
+    }
+
+    public void solarfix()
+    {
+        electric += 10;
     }
 
     private void Update()
