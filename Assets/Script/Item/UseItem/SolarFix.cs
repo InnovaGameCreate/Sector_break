@@ -8,6 +8,9 @@ public class SolarFix : MonoBehaviour
     public bool IsEngineActive = false;
     private bool IsOnce = false;
 
+    private bool solarFixClear = false;
+
+ public bool SolarFixClear { get => solarFixClear; set => solarFixClear = value; }
     [SerializeField]
     GameObject textgackGround;
     [SerializeField]
@@ -16,6 +19,9 @@ public class SolarFix : MonoBehaviour
     float fixPartsSolar;
     [SerializeField]
     GameObject electricManager;
+
+   
+
     private void Awake()
     {
         
@@ -70,6 +76,7 @@ public class SolarFix : MonoBehaviour
         {
             remainTextParts.text = "èCóùäÆóπ";
             fixPartsSolar = 7.0f;
+            SolarFixClear = true;
             electricManager.GetComponent<electricData>().solarfix();
             yield return new WaitForSeconds(1.0f);
             textgackGround.SetActive(false);

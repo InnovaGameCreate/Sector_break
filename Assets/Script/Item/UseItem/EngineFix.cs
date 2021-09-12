@@ -8,6 +8,10 @@ public class EngineFix : MonoBehaviour
     public bool IsEngineActive = false;
     private bool IsOnce = false;
 
+    private bool EngineFixClear = false;
+
+ public bool EngineFixClear1 { get => EngineFixClear; set => EngineFixClear = value; }
+
     [SerializeField]
     GameObject textgackGround;
     [SerializeField]
@@ -16,6 +20,9 @@ public class EngineFix : MonoBehaviour
     float fixPartsEngine;
     [SerializeField]
     GameObject damageEffect;
+
+   
+
     private void Awake()
     {
         damageEffect.SetActive(true);
@@ -66,6 +73,7 @@ public class EngineFix : MonoBehaviour
         else
         {
             remainTextParts.text = "èCóùäÆóπ";
+            EngineFixClear1 = true;
             damageEffect.SetActive(false);
             IsEngineActive = true;
             yield return new WaitForSeconds(3.0f);

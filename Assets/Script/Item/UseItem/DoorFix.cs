@@ -8,6 +8,9 @@ public class DoorFix : MonoBehaviour
     public bool IsEngineActive = false;
     private bool IsOnce = false;
 
+    private bool doorFixClear = false;
+
+ public bool DoorFixClear { get => doorFixClear; set => doorFixClear = value; }
     [SerializeField]
     GameObject textgackGround;
     [SerializeField]
@@ -20,6 +23,8 @@ public class DoorFix : MonoBehaviour
     GameObject DamageEffect;
 
     OpenDoor doorScript;
+
+   
 
     private void Awake()
     {
@@ -75,6 +80,7 @@ public class DoorFix : MonoBehaviour
         else
         {
             remainTextParts.text = "èCóùäÆóπ";
+            DoorFixClear = true;
             DamageEffect.SetActive(false);
             IsEngineActive = true;
             yield return new WaitForSeconds(1.0f);
