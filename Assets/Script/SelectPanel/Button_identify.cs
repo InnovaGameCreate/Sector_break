@@ -5,13 +5,11 @@ using UnityEngine.UI;
 
 public class Button_identify : MonoBehaviour
 {
-
     public bool O2 = true;
     public bool Storage = true;
     public bool Engine = true;
     public bool Coffee = true;
     public bool Living = true;
-
 
     [SerializeField]
     GameObject door_O2tank;
@@ -27,14 +25,19 @@ public class Button_identify : MonoBehaviour
 
     [SerializeField]
     GameObject door_Livingroom;
+
+    [SerializeField] 
+    GameObject selectPanel;
+
     public void OnClick(int number)
     {
         switch (number)
         {
             case 0:
 
-                if (O2 == true)
+                if ((O2 == true) && (Input.GetButton("Yes")))
                 {
+                    selectPanel.SetActive(false);
                     Debug.Log("O2roomÇïïçΩÇµÇ‹Ç∑Ç©ÅH");
                 }
                 break;
