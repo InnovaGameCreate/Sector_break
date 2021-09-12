@@ -14,8 +14,11 @@ public class EngineFix : MonoBehaviour
     Text remainTextParts;
     [SerializeField]
     float fixPartsEngine;
+    [SerializeField]
+    GameObject damageEffect;
     private void Awake()
     {
+        damageEffect.SetActive(true);
         textgackGround.SetActive(false);
         remainTextParts.enabled = false;
         StartCoroutine("EngineActive");
@@ -63,6 +66,7 @@ public class EngineFix : MonoBehaviour
         else
         {
             remainTextParts.text = "èCóùäÆóπ";
+            damageEffect.SetActive(false);
             IsEngineActive = true;
             yield return new WaitForSeconds(3.0f);
             textgackGround.SetActive(false);

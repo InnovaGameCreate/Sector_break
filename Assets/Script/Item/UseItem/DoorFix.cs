@@ -16,11 +16,14 @@ public class DoorFix : MonoBehaviour
     float fixPartsEngine;
     [SerializeField]
     GameObject door_Coffeeroom;
+    [SerializeField]
+    GameObject DamageEffect;
 
     OpenDoor doorScript;
 
     private void Awake()
     {
+        DamageEffect.SetActive(true);
         door_Coffeeroom.GetComponent<OpenDoor>().CanOpendoor = false;
     }
     private void Start()
@@ -72,6 +75,7 @@ public class DoorFix : MonoBehaviour
         else
         {
             remainTextParts.text = "èCóùäÆóπ";
+            DamageEffect.SetActive(false);
             IsEngineActive = true;
             yield return new WaitForSeconds(1.0f);
             textgackGround.SetActive(false);
