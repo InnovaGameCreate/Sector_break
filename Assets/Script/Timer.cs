@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
     private Text timerText;
     private float second = 00;//§ŒÀŠÔ(•ª)
-    private int minute = 10;//§ŒÀŠÔ(•b)
+    private int minute = 1;//§ŒÀŠÔ(•b)
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class Timer : MonoBehaviour
         if (minute <= -1f)
         {
             timerText.text = "00:00.00";
+            SceneManager.LoadScene("end");
         }
 
     }

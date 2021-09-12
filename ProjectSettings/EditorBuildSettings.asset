@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stage_CameraMove.unity
     guid: 62747756e12130c4da390066b1dbacb3
+  - enabled: 1
+    path: Assets/Scenes/end.unity
+    guid: 6714d33425c43d14e9e6def2a8cbea2d
   m_configObjects: {}
