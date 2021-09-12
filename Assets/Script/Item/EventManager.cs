@@ -12,6 +12,8 @@ public class EventManager : MonoBehaviour
     GameObject enginefix;
     [SerializeField]
     GameObject doorfix;
+    [SerializeField]
+    GameObject solarfix;
     public static EventManager instance;
     private void Awake()
     {
@@ -121,6 +123,7 @@ public class EventManager : MonoBehaviour
 
     IEnumerator solarpanel()
     {
+        solarfix.GetComponent<SolarFix>().ClickSolar();
         yield break;
     }
 }

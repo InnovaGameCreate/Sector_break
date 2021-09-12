@@ -36,9 +36,9 @@ public class FindPlayer : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            routine = null;
-            routine = coroutine();
+            StopCoroutine("coroutine");
             text.SetActive(false);
+            panel.SetActive(false);
         }
     }
 
