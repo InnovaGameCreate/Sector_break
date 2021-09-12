@@ -40,50 +40,30 @@ public class Button_identify : MonoBehaviour
                 if (O2 == true) 
                 {
                     Debug.Log("O2roomを封鎖しますか？");
-                    if (Input.GetButton("Yes"))
-                    {
-                        O2tank.SetActive(false);
-                    }
                 }
                 break;
             case 1:
                 if (Storage == true)
                 {
                     Debug.Log("ストレージルームを封鎖しますか？");
-                    if (Input.GetButton("Yes"))
-                    {
-                        Strage.SetActive(false);
-                    }
                 }
                 break;
             case 2:
                 if (Engine == true)
                 {
                     Debug.Log("エンジンルームを封鎖しますか？");
-                    if (Input.GetButton("Yes"))
-                    {
-                        Engineroom.SetActive(false);
-                    }
                 }
                 break;
             case 3:
                 if (Coffee == true)
                 {
                     Debug.Log("コーヒールームを封鎖しますか？");
-                    if (Input.GetButton("Yes"))
-                    {
-                        Coffeeroom.SetActive(false);
-                    }
                 }
                 break;
             case 4:
                 if (Living == true)
                 {
                     Debug.Log("リビングルームを封鎖しますか？");
-                    if (Input.GetButton("Yes"))
-                    {
-                        Livingroom.SetActive(false);
-                    }
                 }
                 break;
             default:
