@@ -6,7 +6,10 @@ public class electricData : MonoBehaviour
 {
     public float electric;
     private float electricSupply = 75.0f;
-    private float electricComsume = 95.0f;
+    public float electricComsume = 95.0f;
+    public float fixpanel;
+    public float engineboost;
+    public float bairitu;
 
     Death2 death2;
     // Start is called before the first frame update
@@ -19,12 +22,12 @@ public class electricData : MonoBehaviour
 
     public void EngineClick()
     {
-        electric -= 50;
+        electric -= engineboost;
     }
 
     public void solarfix()
     {
-        electricSupply += 10;
+        electricSupply += fixpanel;
     }
 
     private void Update()
@@ -36,7 +39,7 @@ public class electricData : MonoBehaviour
     {
         for (electric = 100; electric > 0;)
         {
-            electric += 0.03f * (electricSupply  - electricComsume);
+            electric += bairitu * (electricSupply  - electricComsume);
             yield return new WaitForSeconds(1.0f);
         }
         if(electric < 0)

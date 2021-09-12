@@ -605,6 +605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stress: 0
+  death2: {fileID: 0}
 --- !u!1 &137427963 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6723602909481765244, guid: 78fb8bfe3c2b68d4c8eadfd497c252a7, type: 3}
@@ -11699,6 +11700,7 @@ MonoBehaviour:
   Player: {fileID: 144951855}
   ItemBar: {fileID: 1594789208}
   Explosion: {fileID: 1924101590}
+  directionalLight: {fileID: 1088537076}
 --- !u!1 &952118550
 GameObject:
   m_ObjectHideFlags: 0
@@ -13258,6 +13260,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   electric: 0
+  electricComsume: 95
+  fixpanel: 0
+  engineboost: 0
+  bairitu: 0
 --- !u!4 &1126810888
 Transform:
   m_ObjectHideFlags: 0
