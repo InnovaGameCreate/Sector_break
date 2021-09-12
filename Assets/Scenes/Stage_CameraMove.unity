@@ -11578,6 +11578,7 @@ GameObject:
   - component: {fileID: 912600742}
   - component: {fileID: 912600744}
   - component: {fileID: 912600745}
+  - component: {fileID: 912600746}
   m_Layer: 0
   m_Name: GameSystem
   m_TagString: Untagged
@@ -11639,6 +11640,21 @@ MonoBehaviour:
   Player: {fileID: 144951855}
   ItemBar: {fileID: 1594789208}
   Explosion: {fileID: 8707683654192510655, guid: 636cdfdf8f4404049980e8c2fed55cdb, type: 3}
+--- !u!114 &912600746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912600741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24d97599831fafb48a7cbd525cb63fae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 144951855}
+  ItemBar: {fileID: 1594789208}
+  Explosion: {fileID: 1924101590}
 --- !u!1 &952118550
 GameObject:
   m_ObjectHideFlags: 0
@@ -16928,6 +16944,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkPanel: {fileID: 1495556889}
   buttonA: {fileID: 0}
+--- !u!1 &1924101590 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8707683654192510655, guid: 636cdfdf8f4404049980e8c2fed55cdb, type: 3}
+  m_PrefabInstance: {fileID: 261176055}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1930940044
 GameObject:
   m_ObjectHideFlags: 0
