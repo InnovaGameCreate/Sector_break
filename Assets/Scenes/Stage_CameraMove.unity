@@ -375,9 +375,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Select_Note, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 1747710390635388577, guid: e6a70177e83efa34eb1940cfae65564d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5423c68e47b603d4ca223e687d6caba4, type: 3}
     - target: {fileID: 1747710390635388578, guid: e6a70177e83efa34eb1940cfae65564d, type: 3}
       propertyPath: m_Name
       value: NoteDeviceButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1747710390635388578, guid: e6a70177e83efa34eb1940cfae65564d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1747710390635388579, guid: e6a70177e83efa34eb1940cfae65564d, type: 3}
       propertyPath: m_Pivot.x
@@ -3324,6 +3332,50 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6723602909508371119, guid: 78fb8bfe3c2b68d4c8eadfd497c252a7, type: 3}
   m_PrefabInstance: {fileID: 904680543}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &547370593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 547370595}
+  - component: {fileID: 547370594}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &547370594
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547370593}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &547370595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547370593}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.11, y: 3.64, z: 5.93}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &549056087 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6723602909946501341, guid: 78fb8bfe3c2b68d4c8eadfd497c252a7, type: 3}
@@ -16351,6 +16403,50 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1678400098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1678400100}
+  - component: {fileID: 1678400099}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1678400099
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678400098}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1678400100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678400098}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.23, y: 3.64, z: 38.89}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1701725917 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2824823420698734998, guid: 33e9dce7386be8b4ca0f2642e0cd1ea8, type: 3}
@@ -17252,6 +17348,10 @@ PrefabInstance:
     - target: {fileID: 9087834925866086121, guid: f9c7dc845c63c1c44b62d5c4a7755a0e, type: 3}
       propertyPath: m_Name
       value: NotePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 9087834925866086121, guid: f9c7dc845c63c1c44b62d5c4a7755a0e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9c7dc845c63c1c44b62d5c4a7755a0e, type: 3}
